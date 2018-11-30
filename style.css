@@ -27,16 +27,27 @@ Description: A template by Aristotheme.
 /*=================================*/
 /* Reset & Clearfix Styles
 /*=================================*/
+@import url('https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans:300,400,700');
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } :focus { outline: 0; } ins { text-decoration: none; } del { text-decoration: line-through; } table { border-collapse: collapse; border-spacing: 0; }
 
 .cf:before, .cf:after { content: " "; display: table; } .cf:after { clear: both; }
+
+
+
+@font-face {
+    font-family: 'meatloaf';
+    src: 
+	    url('fonts/meatloaf.ttf') 
+}
 
 /*=================================*/
 /* Main Styles
 /*=================================*/
 
 * { box-sizing: border-box; }
+
+
 html {
     font-family: sans-serif; /* 1 */
     -ms-text-size-adjust: 100%; /* 2 */
@@ -54,17 +65,121 @@ body {
     word-wrap: break-word;
     -webkit-text-size-adjust: none;
 }
+.navbar {
+    font-family: "meatloaf", sans-serif;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    font-size: 50px;
+    /*background-color: white;*/
+}
+
+.logo {
+    position: fixed;
+    display: inline-block;
+    top: 34px;
+}
+
+/*.hover {
+    background: url("img/logo.png");
+     You must set a specified height 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}*/
+
+.logo2 {
+    position: fixed;
+    top: 34px;
+    background-image: url("img/logo.png");
+    background-size: cover;
+}
+#navbarNav {
+    float: right;
+}
+
+.nav-item {
+    margin-top: 34px;
+    font-size: 30px;
+}
+
+
+
+.introduction {
+    padding-top: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    color: #4c4c4b;
+    font-size: 16px;
+}
+
+
+strong{
+    font-weight: 700;
+}
+
+.pink {
+    color: #ef6b89;
+}
+
+.serenity {
+    color: #92a8d1;
+}
+
+.purple {
+    color: #4b2e83;
+}
+
+.rose {
+    color: #f5c9c8;
+}
+
+
+
+
+
+
+
+/*=================================*/
+/* Resume Style
+/*=================================*/
+
+.title {
+    margin-top: 100px;
+}
+.title-site {
+    width: 70%;
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content-r {
+    margin-top: 10%;
+    align-content: center;
+    background-color: #fff0f0;
+}
+
+.resume {
+    box-shadow: 10px 10px 20px #f5c9c8;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 body.loaded,
 .no-js body {
     opacity: 1;
 }
 a, a:visited {
-    color: #90D4C5;
+    color: #92a8d1;
+    /*color: #90D4C5;*/
     text-decoration: none;
     transition: color 0.1s ease-in-out;
 }
 a:hover, a:active {
-    color: #2c2c2c;
+    color: #90D4C5;
     text-decoration: none;
 }
 
@@ -256,6 +371,8 @@ pre {
 /*=================================*/
 /* Navigation Styles
 /*=================================*/
+
+
 .cd-nav-trigger {
     position: fixed;
     z-index: 999;
@@ -263,7 +380,7 @@ pre {
     top: 34px;
     height: 54px;
     width: 54px;
-    background-color: #2c2c2c;
+    background-color: #92a8d1;
     border-radius: 50%;
     /* image replacement */
     overflow: hidden;
@@ -306,6 +423,7 @@ pre {
     -o-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-backface-visibility: hidden;
+
     backface-visibility: hidden;
     -webkit-transition: -webkit-transform 0.5s, width 0.5s, top 0.3s;
     -moz-transition: -moz-transform 0.5s, width 0.5s, top 0.3s;
@@ -398,7 +516,7 @@ pre {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #2c2c2c;
+    background-color: #f5c9c8;
     visibility: hidden;
     -webkit-transition: visibility 0s 0.7s;
     -moz-transition: visibility 0s 0.7s;
@@ -455,7 +573,7 @@ pre {
     margin-top: 90px;
 }
 .cd-nav .cd-primary-nav a {
-    font-size: 21px;
+    font-size: 40px;
     display: inline-block;
 }
 .cd-nav .cd-primary-nav a.selected {
@@ -487,7 +605,7 @@ pre {
 .cd-nav .cd-contact-info li, 
 .cd-nav .cd-contact-info a, 
 .cd-nav .cd-contact-info span {
-    font-size: 18px;
+    font-size: 30px;
 }
 
 .cd-nav .cd-contact-socials li {
@@ -922,7 +1040,7 @@ nav[role="navigation"] {
 }
 .site-header,
 .page-desc {
-    padding: 40px 20px;
+    padding: 100px 30px 50px 30px;
     width: 100%;
 }
 
@@ -993,10 +1111,13 @@ nav[role="navigation"] {
 /*=================================*/
 
 
-
 @media only screen and (min-width: 401px) {
 
     /*===== Titles =====*/
+    .introduction {
+        font-size: 21px;
+    }
+
     .site-tagline p { 
         font-size: 28px;
     }
@@ -1009,6 +1130,13 @@ nav[role="navigation"] {
         padding: 40px;
     }
     /*===== Projects =====*/
+    .content {
+        align-content: center;
+        background-color: #eff4f9;
+    }
+
+
+
     .projects-feed .thumb,
     .projects-feed .project-content-container {
         float: left;
@@ -1059,12 +1187,13 @@ nav[role="navigation"] {
     .site-tagline {
         margin-bottom: 60px;
     }
+
     .site-tagline p { 
         font-size: 36px;
     }
     /*===== Navigations =====*/
     .cd-nav-trigger {
-        top: 52px;
+        top: 34px;
         right: 60px;
     }
     .cd-nav .cd-navigation-wrapper {
@@ -1083,7 +1212,7 @@ nav[role="navigation"] {
         margin-top: 160px;
     }
     .cd-nav .cd-primary-nav a {
-        font-size: 36px;
+        font-size: 50px;
     }
     .cd-nav .cd-contact-info {
         margin-top: 160px;
@@ -1096,6 +1225,24 @@ nav[role="navigation"] {
     .cd-nav .cd-contact-socials {
         text-align: right;
     }
+
+    .title-sm {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .site-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .resume {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
     /*===== Blog =====*/
     .blog_item h1 {
         font-size: 2rem;
@@ -1111,6 +1258,12 @@ nav[role="navigation"] {
     .site-footer { padding: 40px 60px; }
 
 
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-nav-trigger {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 801px) {
@@ -1130,6 +1283,11 @@ nav[role="navigation"] {
     .site-tagline {
         margin-bottom: 80px;
     }
+
+    .introduction{
+        font-size: 28px;
+    }
+
     .site-tagline p { 
         font-size: 42px;
     }
@@ -1149,6 +1307,23 @@ nav[role="navigation"] {
     .cd-nav .cd-contact-info span {
         font-size: 21px;
     }
+
+    .title-sm {
+        width: 50%;
+    }
+
+    .site-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    .resume {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+
     /*===== Footer =====*/
     .site-footer { padding: 40px 80px; }
     .footer-text { float: left; }
@@ -1266,6 +1441,10 @@ nav[role="navigation"] {
         margin-top: 120px;
     }
     /*===== Titles =====*/
+    .introduction {
+        font-size: 36px;
+    }
+
     .site-title {
         margin-bottom: 200px;
     }
@@ -1301,6 +1480,12 @@ nav[role="navigation"] {
     /*===== Projects =====*/
     .thumbnail-title {
         font-size: 36px;
+    }
+
+    .site-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
     }
     /*===== Paginations =====*/
 
