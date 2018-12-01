@@ -41,6 +41,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	    url('fonts/meatloaf.ttf') 
 }
 
+@font-face {
+    font-family: 'historia';
+    src: 
+	    url('fonts/TheHistoriaDemo.ttf') 
+}
+
+@font-face {
+    font-family: 'robotobc';
+    src: 
+	    url('fonts/Roboto-BoldCondensed.ttf') 
+}
+
 /*=================================*/
 /* Main Styles
 /*=================================*/
@@ -73,6 +85,21 @@ body {
     float: right;
     font-size: 50px;
     /*background-color: white;*/
+}
+
+a, a:visited {
+    color: #92a8d1;
+    /*color: #90D4C5;*/
+    text-decoration: none;
+    transition: color 0.1s ease-in-out;
+}
+a:hover, a:active {
+    color: #f5c9c8;
+    text-decoration: none;
+}
+
+.nav-item .selected {
+    color: #ef6b89;
 }
 
 .logo {
@@ -172,16 +199,7 @@ body.loaded,
 .no-js body {
     opacity: 1;
 }
-a, a:visited {
-    color: #92a8d1;
-    /*color: #90D4C5;*/
-    text-decoration: none;
-    transition: color 0.1s ease-in-out;
-}
-a:hover, a:active {
-    color: #90D4C5;
-    text-decoration: none;
-}
+
 
 h1,h2,h3 {
     font-weight: bold;
@@ -516,7 +534,7 @@ pre {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #f5c9c8;
+    background-color: #fff0f0;
     visibility: hidden;
     -webkit-transition: visibility 0s 0.7s;
     -moz-transition: visibility 0s 0.7s;
@@ -577,27 +595,28 @@ pre {
     display: inline-block;
 }
 .cd-nav .cd-primary-nav a.selected {
-    color: #ffffff;
+    color: #ec6b88;
 }
 .no-touch .cd-nav .cd-primary-nav a:hover {
-    color: #ffffff;
+    color: #f5c9c8;
 }
 .cd-nav .cd-contact-info {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .cd-nav .cd-contact-info li {
+    font-family: "robotobc", Arial, Helvetica, sans-serif;
     margin-bottom: 0.5em;
     line-height: 1.2;
-    color: rgba(255, 255, 255, 0.3);
+    color: #f5c9c8;
 }
 .cd-nav .cd-contact-info a {
-    color: #ffffff;
-    color: rgba(255, 255, 255, 0.3);
+    color: #f5c9c8;
+    
 }
 .cd-nav .cd-contact-info a:hover {
-    color: #ffffff;
-    color: rgba(255, 255, 255, 1);
+    color: #ec6b88;
+
 }
 .cd-nav .cd-contact-info span {
     display: block;
@@ -612,13 +631,13 @@ pre {
     line-height: 1.8;
 }
 .cd-nav .cd-contact-socials a {
-    color: rgba(255, 255, 255, 0.3);
+    color: #f5c9c8;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px
 }
 .cd-nav .cd-contact-socials a:hover {
-    color: #fff;
+    color: #ec6b88;
 }
 .no-js main {
     height: auto;
@@ -642,6 +661,8 @@ pre {
 /*===== Projects Feed =====*/
 .projects-feed {
     clear: both;
+    margin-bottom: 30px;
+    
 }
 .projects-feed .project {
     background: #fff;
@@ -703,27 +724,29 @@ pre {
     vertical-align: middle;
 }
 .thumbnail-title {
-    color: #2c2c2c;
-    font-family: 'Righteous',helvetica,sans-serif;
-    font-size: 21px;
+    color: #4c4c4b;
+    font-family: 'meatloaf',helvetica,sans-serif;
+    font-size: 40px;
     margin: 0 auto 10px auto;
     text-align: left;
-    letter-spacing: 4px;
-    text-transform:uppercase;
+    
+    
     max-width: 360px;
     width: 75%;
     word-wrap: break-word;
+    text-shadow: 2px 2px #f7f3cb;
 }
 .thumbnail-description {
-    color: #2c2c2c;
-    font-family: 'quicksand', Arial, sans-serif;
+    color: #4c4c4b;
+    font-family: 'robotobc', Arial, sans-serif;
     font-size: 16px;
     margin: 0 auto;
     max-height: 5em;
     max-width: 360px;
     text-align: left;
+    text-shadow: 2px 2px #f7f3cb;
     width: 75%;
-    text-transform: uppercase;
+    
 }
 /*===== Project Assets =====*/
 .thumb img {
