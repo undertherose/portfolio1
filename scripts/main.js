@@ -18,6 +18,11 @@ jQuery(document).ready(function($){
 
 });
 
+$('.nav-wrap').on('click', function(event){
+    //stop if nav animation is running 
+        $('body').toggleClass('navigation-is-open');
+});
+
 
 ! function(a) {
     "use strict";
