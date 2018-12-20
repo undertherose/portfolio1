@@ -131,7 +131,12 @@ a:hover, a:active {
     font-size: 30px;
 }
 
-
+.index-header {
+    margin-top: -100px;
+}
+.content {
+    margin-top: 50px;
+}
 
 .introduction {
     padding-top: 40px;
@@ -139,6 +144,10 @@ a:hover, a:active {
     font-weight: 300;
     color: #4c4c4b;
     font-size: 16px;
+}
+
+.thumbnail-title {
+    line-height: 70%;
 }
 
 
@@ -171,17 +180,27 @@ strong{
 /*=================================*/
 /* Project Item Style
 /*=================================*/
-.navbar-pj1 li a:hover {
+.navbar-pj li a:hover {
+    color: #92a8d1;
+}
+
+.navbar-pj1 li a {
     color: #97C1FC;
 }
 
-.navbar-pj2 li a:hover {
+.navbar-pj2 li a {
     color: #FC9F9F;
 }
 
-.site-header img {
+.navbar-pj3 li a {
+    color: #F7C874;
+}
+
+
+
+.header img {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: -50px;
 }
 
 .site-header {
@@ -210,7 +229,9 @@ strong{
 }
 
 .information p {
+    font-family: 'Nunito Sans', sans-serif;
     text-align: left;
+    font-weight: 300;
 }
 
 .title1 {
@@ -222,6 +243,12 @@ strong{
     font-size: 72px;
     margin: 30px 0 0 0;
     line-height: 80%;
+}
+
+.section-sm {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-lg {
@@ -246,6 +273,34 @@ strong{
 
 }
 
+.result {
+    background-color: #FFFDEE;
+}
+
+.video {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.margin {
+    margin-top: 100px;
+}
+
+.margin-50 {
+    margin-top: 50px;
+}
+
+
+.infographic {
+    width: 50%;
+    padding: 50px;
+
+}
+
+.img-lg {
+    margin-top: 100px;
+}
+
 .pj1 .title1 {
     color: #97C1FC;
 }
@@ -253,6 +308,72 @@ strong{
 .pj2 .title1 {
     color: #FC9F9F;
 }
+.pj3 .title1 {
+    color: #F7C874;
+}
+
+/*=================================*/
+/* Dropdown Style
+/*=================================*/
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+  }
+  
+  /* Links inside the navbar */
+
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
 
 /*=================================*/
 /* Resume Style
@@ -287,10 +408,7 @@ body.loaded,
 }
 
 
-h1,h2,h3 {
-    font-weight: bold;
-    line-height: 1.5;
-}
+
 h1 {
     font-size: 2.2rem;
     letter-spacing: -1px;
